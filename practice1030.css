@@ -10,6 +10,11 @@ h1 {
     border-bottom: 2px solid whitesmoke ;
     padding-bottom: 20px;
 }
+h2 > .sharp {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
 h2 {
     color: whitesmoke;
     font-size: 25px;
