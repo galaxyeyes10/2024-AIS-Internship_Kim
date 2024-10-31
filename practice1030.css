@@ -10,7 +10,13 @@ h1 {
     border-bottom: 2px solid whitesmoke ;
     padding-bottom: 20px;
 }
-
+h2 {
+    color: whitesmoke;
+    font-size: 25px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 25px;
+}
 main > .container-dog {
     background-color: rgb(0, 23, 46);
     margin-left: 3%;
@@ -19,13 +25,6 @@ main > .container-dog {
     border-radius: 10px;
 }
 
-main > .container-dog > .dog_h2 {
-    color: whitesmoke;
-    font-size: 25px;
-    width: fit-content;
-    height: fit-content;
-    margin-left: 25px;
-}
 main > .container-dog > .dog_contents {
     display: flex;
     flex-direction: row;
@@ -34,28 +33,7 @@ main > .container-dog > .dog_contents {
     margin-left: 25px;
     margin-right: 25px;
 }
-main > .container-dog > .dog_contents> .dog_pic1 {
-    width: 270px;
-    height: 220px;
-    background-color: rgb(21, 96, 130);
-    margin-bottom: 25px;
-    border: 1px solid whitesmoke;
-}
-main > .container-dog > .dog_contents > .dog_pic2 {
-    width: 270px;
-    height: 220px;
-    background-color: rgb(21, 96, 130);
-    margin-bottom: 25px;
-    border: 1px solid whitesmoke;
-}
-main > .container-dog > .dog_contents> .dog_pic3 {
-    width: 270px;
-    height: 220px;
-    background-color: rgb(21, 96, 130);
-    margin-bottom: 25px;
-    border: 1px solid whitesmoke;
-}
-main > .container-dog > .dog_contents> .dog_pic4 {
+.pic {
     width: 270px;
     height: 220px;
     background-color: rgb(21, 96, 130);
@@ -70,14 +48,6 @@ main > .container-cat {
     height: auto;
     border-radius: 10px;
 }
-
-main > .container-cat > .cat_h2 {
-    color: whitesmoke;
-    font-size: 25px;
-    width: fit-content;
-    height: fit-content;
-    margin-left: 25px;
-}
 main > .container-cat > .cat_contents {
     display: flex;
     flex-direction: row;
@@ -85,34 +55,6 @@ main > .container-cat > .cat_contents {
     justify-content: space-between;
     margin-left: 25px;
     margin-right: 25px;
-}
-main > .container-cat > .cat_contents> .cat_pic1 {
-    width: 270px;
-    height: 220px;
-    background-color: rgb(21, 96, 130);
-    margin-bottom: 25px;
-    border: 1px solid whitesmoke;
-}
-main > .container-cat > .cat_contents > .cat_pic2 {
-    width: 270px;
-    height: 220px;
-    background-color: rgb(21, 96, 130);
-    margin-bottom: 25px;
-    border: 1px solid whitesmoke;
-}
-main > .container-cat > .cat_contents> .cat_pic3 {
-    width: 270px;
-    height: 220px;
-    background-color: rgb(21, 96, 130);
-    margin-bottom: 25px;
-    border: 1px solid whitesmoke;
-}
-main > .container-cat > .cat_contents> .cat_pic4 {
-    width: 270px;
-    height: 220px;
-    background-color: rgb(21, 96, 130);
-    margin-bottom: 25px;
-    border: 1px solid whitesmoke;
 }
 
 main > .container-ham {
@@ -123,14 +65,6 @@ main > .container-ham {
     margin-bottom: 3%;
     border-radius: 10px;
 }
-
-main > .container-ham > .ham_h2 {
-    color: whitesmoke;
-    font-size: 25px;
-    width: fit-content;
-    height: fit-content;
-    margin-left: 25px;
-}
 main > .container-ham > .ham_contents {
     display: flex;
     flex-direction: row;
@@ -138,32 +72,4 @@ main > .container-ham > .ham_contents {
     justify-content: space-between;
     margin-left: 25px;
     margin-right: 25px;
-}
-main > .container-ham > .ham_contents> .ham_pic1 {
-    width: 270px;
-    height: 220px;
-    background-color: rgb(21, 96, 130);
-    margin-bottom: 25px;
-    border: 1px solid whitesmoke;
-}
-main > .container-ham > .ham_contents > .ham_pic2 {
-    width: 270px;
-    height: 220px;
-    background-color: rgb(21, 96, 130);
-    margin-bottom: 25px;
-    border: 1px solid whitesmoke;
-}
-main > .container-ham > .ham_contents> .ham_pic3 {
-    width: 270px;
-    height: 220px;
-    background-color: rgb(21, 96, 130);
-    margin-bottom: 25px;
-    border: 1px solid whitesmoke;
-}
-main > .container-ham > .ham_contents> .ham_pic4 {
-    width: 270px;
-    height: 220px;
-    background-color: rgb(21, 96, 130);
-    margin-bottom: 25px;
-    border: 1px solid whitesmoke;
 }
