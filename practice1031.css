@@ -1,3 +1,6 @@
+body {
+    border: 1px solid black;
+}
 header {
     width: 100%;
     height: 100px;
@@ -5,7 +8,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
 }
 .content {
     font-weight: 1000;
@@ -22,7 +25,6 @@ main > div:nth-child(1) {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid black;
     border-right: 1px solid black;
 }
 main > div:nth-child(2) {
@@ -41,7 +43,6 @@ main > div:nth-child(3) {
     justify-content: center;
     align-items: center;
     border-left: 1px solid black;
-    border-right: 1px solid black;
 }
 
 footer {
@@ -51,5 +52,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border-top: 1px solid black;
 }
