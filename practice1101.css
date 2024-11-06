@@ -6,8 +6,8 @@
     .container {
         display: grid;
         height: 100vh;
-        grid-template-rows: 16% 16% 4% 20% 12% 8% 12% 12%;
-        grid-template-columns: 13% 13% 7% 20% 20% 13% 7% 7%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "a a b b b k l l"
             "a a c c h k l l"
