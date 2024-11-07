@@ -5,7 +5,8 @@
 
     .container {
         display: grid;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
@@ -93,10 +94,7 @@
         align-items: center;
         overflow: hidden;
     }
-    img {
-        width: 100%;
+    .container> div > img {
+        width: 200%;
         height: auto;
-        scale: 1;
-        opacity: 0.5;
-        transition: transform 0.3s ease, opacity 0.3s ease;
     }

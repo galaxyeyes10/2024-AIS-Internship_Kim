@@ -4,6 +4,9 @@ function handleOnLoad() {
     for (let index = 0; index < container.length; index++) {
         const element = container[index];
 
+            element.style.opacity = 0.5;
+            element.style.transition = "transform 0.3s ease, opacity 0.3s ease";
+            
             element.addEventListener("mouseover", ()=> {
                 scaleAndOpacity(element, 1.3, 1);});
     
