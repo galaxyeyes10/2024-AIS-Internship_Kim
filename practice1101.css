@@ -80,17 +80,17 @@ button {
     font-size: 13px;
     transition: 0.2s;
 }
-button > .kart {
+button > .cart {
     width: 25px;
     height: auto;
     z-index: 1;
 }
-#kart {
+#cart {
     border-left: 1px solid black;
     margin-left: 20px;
     width: 20%;
 }
-#kart-title {
+#cart-title {
     margin-left: 20px;
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -98,7 +98,7 @@ button > .kart {
 }
 .item-container {
     display: flex;
-    align-items: center;
+    align-items: end;
     background-color: rgb(168, 168, 168, 0.5);
     border-radius: 5px;
     padding-top: 20px;
@@ -106,6 +106,15 @@ button > .kart {
     padding-bottom: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
+}
+.wantbuy-img {
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
 }
 footer {
     height: 15vh;

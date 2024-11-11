@@ -29,12 +29,12 @@ function handleOnLoad() {
             itemImg.addEventListener("mouseover", (event) => imgDetail(event));
         }
 
-        const kartButtons = document.querySelectorAll("button");
-        for (let index = 0; index < kartButtons.length; index++) {
-            const kartButton = kartButtons[index];
+        const cartButtons = document.querySelectorAll("button");
+        for (let index = 0; index < cartButtons.length; index++) {
+            const cartButton = cartButtons[index];
             
-            kartButton.addEventListener("mouseover", (event)=> kartSelect(event));
-            kartButton.addEventListener("mouseout", (event)=> kartSelectOut(event));
+            cartButton.addEventListener("mouseover", (event)=> cartSelect(event));
+            cartButton.addEventListener("mouseout", (event)=> cartSelectOut(event));
         }
 
     }
@@ -50,14 +50,14 @@ function handleOnLoad() {
     function imgDetail(event) {
         event.target.style.cursor = "pointer";
     }
-    function kartSelect(event) {
-        const kartButton = event.currentTarget;
-        kartButton.style.cursor = "pointer";
-        kartButton.style.backgroundColor = "rgb(168, 168, 168, 0.5)"
+    function cartSelect(event) {
+        const cartButton = event.currentTarget;
+        cartButton.style.cursor = "pointer";
+        cartButton.style.backgroundColor = "rgb(168, 168, 168, 0.5)"
     }
-    function kartSelectOut(event) {
-        const kartButton = event.currentTarget;
-        kartButton.style.backgroundColor = "white"
+    function cartSelectOut(event) {
+        const cartButton = event.currentTarget;
+        cartButton.style.backgroundColor = "white"
     }
     function carry(event) {
         const button = event.target;
@@ -65,9 +65,9 @@ function handleOnLoad() {
 
         if (selectImg && selectImg.classList.contains('item-img')) {
 
-            const wantBuyKart = document.getElementById("kart-content");
+            const wantBuyCart = document.getElementById("cart-content");
 
-            let itemContainer = wantBuyKart.querySelector(`.item-container[data-img="${selectImg.src}"]`);
+            let itemContainer = wantBuyCart.querySelector(`.item-container[data-img="${selectImg.src}"]`);
 
             if (!itemContainer) {
                 itemContainer = document.createElement("div");
@@ -76,29 +76,34 @@ function handleOnLoad() {
 
                 const wantBuy = document.createElement("div");
                 wantBuy.style.backgroundImage = `url("${selectImg.src}")`;
-                wantBuy.style.backgroundPosition = "center";
-                wantBuy.style.width = "100px";
-                wantBuy.style.height = "100px";
-                wantBuy.style.borderRadius = "5px"
-                wantBuy.style.display = "inline-block";
-                wantBuy.style.marginRight = "10px";
+                wantBuy.classList.add("wantbuy-img");
                 itemContainer.appendChild(wantBuy);
+
+                const numberAndButton = document.createElement("div");
+                numberAndButton.classList.add("num-and-button");
 
                 const countElement = document.createElement("span");
                 countElement.textContent = "1";
                 countElement.style.fontSize = "18px";
                 countElement.style.color = "black";
-                countElement.style.display = "inline-block";
-                countElement.style.marginTop = "10px";
+
                 itemContainer.appendChild(countElement);
 
-                wantBuyKart.appendChild(itemContainer);
+                itemContainer.appendChild(numberAndButton);
 
+                wantBuyCart.appendChild(itemContainer);
+
+                numberAndButton.appendChild(countElement);
+                
+                const buttonContainer = document.createElement("div");
+                buttonContainer.classList.add("button-container");
+                
+                numberAndButton.appendChild(buttonContainer);
+                
                 const removeButton = document.createElement("button");
                 removeButton.classList.add("remove_button");
                 removeButton.textContent = "1개 제거";
-                removeButton.style.marginTop = "70px";
-                itemContainer.appendChild(removeButton);
+                buttonContainer.appendChild(removeButton);
 
                 removeButton.addEventListener("mouseover", ()=>
                 removeButton.style.cursor = "pointer"
@@ -117,9 +122,8 @@ function handleOnLoad() {
                 const removeAllButton = document.createElement("button");
                 removeAllButton.classList.add("removeAll_button");
                 removeAllButton.textContent = "모두 제거";
-                removeAllButton.style.marginTop = "70px";
                 removeAllButton.style.marginLeft = "3px";
-                itemContainer.appendChild(removeAllButton);
+                buttonContainer.appendChild(removeAllButton);
                 
                 removeAllButton.addEventListener("mouseover", ()=>
                     removeAllButton.style.cursor = "pointer"
